@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Licence purchasing is not available at the moment, but will be in the near future.** In the meantime, every new install includes a 72-hour free trial with all features unlocked.
+
 <div align="center">
 
 # Magic Toolbox
