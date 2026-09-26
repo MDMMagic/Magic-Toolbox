@@ -1,5 +1,5 @@
 > [!WARNING]
-> **Licence purchasing is not available at the moment, but will be in the near future.** In the meantime, every new install includes a 72-hour free trial with all features unlocked.
+> **Licence purchasing is not available at the moment, but will be in the near future.** If you would like a licence, email [info@mdmmagic.au](mailto:info@mdmmagic.au) to be notified once purchasing becomes available. In the meantime, every new install includes a 72-hour free trial with all features unlocked.
 
 <div align="center">
 
