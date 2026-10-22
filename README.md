@@ -9,6 +9,9 @@ dropped `.app`, and wipe a test server (with an encrypted backup) when you're fi
 
 [⬇️ Download the latest release](https://github.com/MDMMagic/Magic-Toolbox/releases/latest) · [📖 Documentation](https://github.com/MDMMagic/Magic-Toolbox/wiki) · [mdmmagic.au](https://mdmmagic.au)
 
+<img width="2032" height="1796" alt="Image 22-10-2026 at 21 24" src="https://github.com/user-attachments/assets/ce8190c6-5177-4eb3-8db5-833ca0d6d6b6" />
+
+
 </div>
 
 ---
