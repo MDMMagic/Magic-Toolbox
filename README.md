@@ -30,11 +30,11 @@ your Mac.
 
 | Tool | What it does | Changes Jamf? |
 |---|---|---|
-| **[Clone](https://github.com/MDMMagic/Magic-Toolbox/wiki/Clone)** | Copies categories, buildings, departments, sites, network segments, scripts, extension attributes, smart and static groups, policies, macOS and iOS profiles, Mac and mobile apps, and restricted software from one server to one or more others. Copies missing dependencies, and asks before overwriting anything with the same name | ✏️ Yes (destinations) |
+| **[Clone](https://github.com/MDMMagic/Magic-Toolbox/wiki/Clone)** | Copies categories, buildings, departments, sites, network segments, scripts, extension attributes, smart and static groups, policies, macOS and iOS profiles, Mac and mobile apps, and restricted software from one server to one or more others. Copies missing dependencies, and asks before overwriting anything with the same name, saving an encrypted backup of it first | ✏️ Yes (destinations) |
 | **[Compare](https://github.com/MDMMagic/Magic-Toolbox/wiki/Compare)** | Three modes. *Compare Computers* shows the policies, groups and profiles two Macs have in common and where they differ. *Compare Mobile Devices* does the same for apps, groups and profiles on two iPhones or iPads. *Compare Instances* compares policies, groups, profiles, scripts, EAs and packages across 2–4 servers. Exports an HTML report | 👁️ Read-only |
 | **[Wipe](https://github.com/MDMMagic/Magic-Toolbox/wiki/Wipe)** | Makes an encrypted backup of a DEV or TEST server, then deletes the objects you choose, in a safe order | 🗑️ Yes (deletes) |
-| **[Restore](https://github.com/MDMMagic/Magic-Toolbox/wiki/Restore)** | Re-creates objects from a Wipe or Unused backup, in dependency order, on any server | ✏️ Yes (creates) |
-| **[Disable](https://github.com/MDMMagic/Magic-Toolbox/wiki/Disable)** | Disables policies, Jamf Pro accounts and App Installers, and removes scope from profiles, restricted software and apps, without deleting anything | ✏️ Yes (disables) |
+| **[Restore](https://github.com/MDMMagic/Magic-Toolbox/wiki/Restore)** | Re-creates objects from a Wipe or Unused backup, in dependency order, on any server, or writes a Clone backup back over the objects it replaced | ✏️ Yes (creates or updates) |
+| **[Disable](https://github.com/MDMMagic/Magic-Toolbox/wiki/Disable)** | Disables policies, Jamf Pro accounts and App Installers, and removes scope from profiles, restricted software and apps, without deleting anything. Saves an encrypted undo backup first | ✏️ Yes (disables) |
 
 ### Audit and health checks
 
@@ -117,7 +117,7 @@ anything on your disk you haven't picked.
 | Smart Group Audit | CSV as well |
 | PPPC Analyser, System Extensions, Web Content Filter, Notifications, Login Item Profiles | `.mobileconfig` files, or a direct upload to Jamf Pro |
 | PPPC Analyser | AppSettings declaration JSON (macOS 27+) |
-| Wipe, Unused | A passphrase-encrypted backup, saved *before* anything is deleted |
+| Wipe, Unused, Clone, Disable | A passphrase-encrypted backup, saved *before* anything is deleted, overwritten or disabled |
 | Icons, Downloader | Images, scripts, EAs, profiles and zip archives |
 
 ---
@@ -127,8 +127,10 @@ anything on your disk you haven't picked.
 **Wipe** and **Unused** delete objects from a live Jamf Pro server. Both save an encrypted backup
 first, and Restore can re-create objects from it. But a restored object is a *new* object with a
 new ID, so anything that referred to the old ID (scope, policy payloads, prestage assignments) may
-need re-linking. **Clone** overwrites objects with the same name on the destination, and
-**Disable** has no backup. Try them on a test server first.
+need re-linking. **Clone** overwrites objects with the same name on the destination, after saving
+an encrypted backup that Restore can write back. **Disable** saves an encrypted undo backup, and
+its **Undo from backup…** button puts the original state and scope back. Try them on a test server
+first.
 
 ---
 
