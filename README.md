@@ -23,7 +23,7 @@ your Mac.
 
 ---
 
-## What's new in 1.2.0
+## What's new in 1.1.0
 
 - **11 new tools:** Broadcast Command, Redeploy, Webhook Manager, Stale Devices, Profile Drift,
   Policy Audit, Patch Compliance, Conditional Access, Category Audit, Enrolment Funnel and App
