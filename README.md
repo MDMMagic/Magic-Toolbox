@@ -10,7 +10,7 @@ when you're finished with it.
 
 [⬇️ Download the latest release](https://github.com/MDMMagic/Magic-Toolbox/releases/latest) · [📖 Documentation](https://github.com/MDMMagic/Magic-Toolbox/wiki) · [mdmmagic.au](https://mdmmagic.au)
 
-<img width="2032" height="1796" alt="Magic Toolbox home screen" src="https://github.com/user-attachments/assets/ce8190c6-5177-4eb3-8db5-833ca0d6d6b6" />
+<img width="1100" height="990" alt="The Magic Toolbox Home screen" src="images/home.png" />
 
 ---
 
@@ -25,17 +25,17 @@ your Mac.
 
 ## What's new in 1.1.0
 
-- **11 new tools:** Broadcast Command, Redeploy, Webhook Manager, Stale Devices, Profile Drift,
-  Policy Audit, Patch Compliance, Conditional Access, Category Audit, Enrolment Funnel and App
-  Icon Fetcher.
+- **23 new tools, 44 in all**, including Command, Broadcast Command, Device Logs, LAPS, Redeploy,
+  Webhook Manager, Create, Fleet Health, Stale Devices, Policy Audit, Patch Compliance, Conditional
+  Access, Enrolment Funnel, Profile Inspector and App Icon Fetcher.
 - **Scheduled Commands** in Command, **Device History** in Device Logs, and **Device Certificates**
   in Cert & Token Expiry.
-- **Policy Scope is now Policy Audit**, with a new Policy Failures tab. Configuration profiles and
-  Entra ID mappings that list `Policy Scope` keep working.
-- **Favourites**, a **Test** button for saved servers, many more MDM commands, security scores in
-  Fleet Health, a preview mode in Clone, folder restores, and more.
+- **Deploy to your organisation**: licences, tool visibility, PINs and server defaults from a
+  configuration profile, and Entra ID sign-in that shows each person only the tools their groups allow.
+- **Favourites**, a **Test** button for saved servers, a preview mode in Clone, folder restores,
+  more checks in Unused, and more.
 
-See the [full list](https://github.com/MDMMagic/Magic-Toolbox/wiki#whats-new-in-120).
+See the [full list](https://github.com/MDMMagic/Magic-Toolbox/wiki#whats-new-in-110).
 
 ---
 
